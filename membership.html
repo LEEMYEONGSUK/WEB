@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      멤버쉼 가입
+    </title>
+  </head>
+
+
+  <body>
+    <h2>BTS MEMBERSHIP JOIN</h2>
+
+    <form action="http://localhost/login.php" enctype="multipart/form-data" method="post" name="join">
+
+      <p><label>
+      아이디 : <input type="text" name="id" value="ID" size="6">
+      </label></p>
+
+      <p><label for="id_pass">
+      비밀번호 : </label> <input id="id_pass" type="password" name="word" value="PW"></p>
+
+      <p><label>
+      성별 : <input type="radio" name="gender"> 남
+            <input type="radio" name="gender"> 여 <br>
+      </label></p>
+
+      <p><label for="id_add"> 주소 : </label>
+      <textarea id="id_add" name="add" rows="2" cols="40">ADDRESS</textarea></p>
+
+      <p>
+      <input type="button" value="확인" onclick="alert('확인되었습니다')" >
+      </p>
+
+      <p>
+        <input type="file" accept=".jpg, .html" name="s_file">
+        <input type="submit" value="제출">
+        <input type="image" src="send.png">
+      </p>
+
+
+    </form>
+  </body>
+
+
+</html>
